@@ -14,12 +14,12 @@ class Data_Br:
         data_formatada = self.momento_cadastro().strftime("%d/%m/%Y/ %H:%M")
         return data_formatada
 
-    def tempo_cadastro(self):
+    def tempo_cadastro(self) -> object:
         agora = datetime.today() + timedelta(days=15, minutes=20,seconds=30)
         return agora - self.tempo_cadastro()
 
 
 teste = Data_Br()
 
-print(teste.tempo_cadastro())
+print(teste)
 
