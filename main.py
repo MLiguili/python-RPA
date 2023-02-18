@@ -1,5 +1,6 @@
 from Cpf_Cnpj import Documento
 from Telefones_Br import TelefonesBr
+from datas_br import Data_Br
 
 cpf = 43120720780
 objeto_1 = Documento.criar_novo(cpf)
@@ -14,7 +15,9 @@ texto = "rua america, 134, tel.:551144117769-Atibaia, 54146246000103 egeg,egegeg
 teste = TelefonesBr(texto)
 print(teste)
 
+hoje = Data_Br()
+
+print(hoje)
 
 
-#print(f"({telefone.group(1)}) {telefone.group(2)}-{telefone.group(3)}")
 

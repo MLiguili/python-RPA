@@ -19,7 +19,4 @@ class Data_Br:
         return agora - self.tempo_cadastro()
 
 
-teste = Data_Br()
-
-print(teste)
 
