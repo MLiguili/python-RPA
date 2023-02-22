@@ -1,6 +1,7 @@
 from Cpf_Cnpj import Documento
 from Telefones_Br import TelefonesBr
 from datas_br import DataBr
+from acesso_cep import BuscaEndereco
 
 
 cpf = 43120720780
@@ -18,3 +19,8 @@ print(teste)
 
 hoje = DataBr()
 print(hoje)
+
+cep = 12942012
+objeto_cep = BuscaEndereco(cep)
+print(objeto_cep)
+print(objeto_cep.acessa_via_cep())
